@@ -16,14 +16,14 @@
       text-align: left;
     }
     #button {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         background-color: rgb(0, 0, 0);
         border-radius: 100px;
         margin: 0 auto;
         line-height: 200px;
         user-select: none;
-        margin-top: 50px;
+        margin-top: 100px;
         font-weight: bold;
         color: white;
         text-align: center;
@@ -32,11 +32,12 @@
       margin-top: 50px;
       font-size: 100px;
       font-weight: bold;
+      text-align: center;
       color: rgb(0, 0, 0);
     }
   </style>
   <div id="score">0</div>
-  <div id="button">ТЫКАЙ</div>
+  <div id="button">ТЫКНИ МЕНЯ</div>
   <script>
     let counter = 0;
     document.getElementById('button').onclick = () => {
