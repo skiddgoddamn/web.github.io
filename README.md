@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пример HTML-страницы с таймером</title>
     <!-- Подключение библиотеки jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
@@ -14,17 +13,17 @@
     body { 
       background-color: rgb(255, 255, 255); 
       font-size: 30px;
-      text-align: center;
+      text-align: left;
     }
     #button {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         background-color: rgb(0, 0, 0);
         border-radius: 100px;
         margin: 0 auto;
         line-height: 200px;
         user-select: none;
-        margin-top: 100px;
+        margin-top: 50px;
         font-weight: bold;
         color: white;
         text-align: center;
@@ -37,7 +36,7 @@
     }
   </style>
   <div id="score">0</div>
-  <div id="button">ТЫКНИ МЕНЯ</div>
+  <div id="button">ТЫКАЙ</div>
   <script>
     let counter = 0;
     document.getElementById('button').onclick = () => {
