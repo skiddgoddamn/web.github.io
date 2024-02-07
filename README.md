@@ -7,6 +7,38 @@
     <!-- Подключение библиотеки jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
+    <style>
+    body { 
+      background-color: rgb(255, 255, 255); 
+      font-size: 30px;
+      text-align: center;
+    }
+    #button {
+      width: 200px;
+      height: 200px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 100px;
+      margin: 0 auto;
+      line-height: 200px;
+      user-select: none;
+      margin-top: 100px;
+    }
+    #score {
+      margin-top: 50px;
+      font-size: 60px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+    }
+  </style>
+  <div id="score">0</div>
+  <div id="button">CLICK ME</div>
+  <script>
+    let counter = 0;
+    document.getElementById('button').onclick = () => {
+      counter = counter + 1;
+      document.getElementById('score').innerText = counter;
+    };
+  </script>
 <body>
     <header>
         <h1 id="dynamic-text" field="tn_text_1706274470730">Добро пожаловать на мою первую HTML-страницу!</h1>
