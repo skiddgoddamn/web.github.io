@@ -6,7 +6,27 @@
     <title>Пример HTML-страницы</title>
 </head>
 <body>
-    <script>
+    <header>
+        <h1>Добро пожаловать на мою первую HTML-страницу!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>О нас</h2>
+            <p>Мы - ваша компания, занимающаяся чем-то интересным.</p>
+        </section>
+        <section>
+            <h2>Таймер</h2>
+            <p field="tn_text_1">00</p>
+            <p field="tn_text_2">00</p>
+            <p field="tn_text_3">00</p>
+            <script>
     $( document ).ready(function() {
      function addLeadingZero(number) {
             // Функция добавляет 0 перед числами, состоящими из одной цифры
@@ -38,26 +58,6 @@
         var timeinterval = setInterval(Timer,500);
     });   
     </script>
-    <header>
-        <h1>Добро пожаловать на мою первую HTML-страницу!</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>О нас</h2>
-            <p>Мы - ваша компания, занимающаяся чем-то интересным.</p>
-        </section>
-        <section>
-            <h2>Таймер</h2>
-            <p field="tn_text_1">00</p>
-            <p field="tn_text_2">00</p>
-            <p field="tn_text_3">00</p>
         </section>
         <section>
             <h2>Главная</h2>
